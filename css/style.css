@@ -36,10 +36,11 @@ h3 {
   margin-bottom: 0.8rem;
   margin-top: 2rem;
   color: var(--heading-color);
+  padding-left: 1rem;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -52,6 +53,7 @@ a {
   font-size: 1rem;
   margin: 0;
   color: var(--body-color);
+  padding-left: 1rem;
 }
 
 a {
@@ -79,11 +81,6 @@ a {
     font-size: 1.3rem;
   }
 }
-/**basics for all */
-.block-container {
-  max-width: 1140px;
-  margin: auto;
-}
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -99,6 +96,26 @@ a {
   p,
   a {
     font-size: 1.5rem;
+  }
+}
+
+/**basics for all */
+img {
+  width: 100%;
+}
+.block-container {
+  max-width: 1140px;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .grid-template-2x {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -195,14 +212,6 @@ a {
 
 .search-icon--mid-black {
   color: #333;
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
 }
 
 /** Return to top buton */
@@ -322,4 +331,40 @@ a {
 
 .advertisment-testemonial .advertisment__heading {
   font-size: 2rem;
+}
+
+/** Banner & Heading section */
+
+.logo {
+  width: 79%;
+  margin: 2.5rem auto;
+  display: table;
+}
+.banner {
+  padding: 0 2rem;
+}
+.banner__heading {
+  line-height: 1.2;
+  text-align: center;
+}
+.separator {
+  width: 20%;
+  margin: 2rem auto;
+  display: table;
+}
+
+@media screen and (min-width: 768px) {
+  .separator {
+    display: none;
+  }
+  .banner {
+    align-self: center;
+  }
+  .headding__info {
+    justify-self: center;
+  }
+  .banner__heading {
+    text-align: left;
+    padding-left: 4rem;
+  }
 }
