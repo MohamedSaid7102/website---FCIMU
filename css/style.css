@@ -79,6 +79,11 @@ a {
     font-size: 1.3rem;
   }
 }
+/**basics for all */
+.block-container {
+  max-width: 1140px;
+  margin: auto;
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -259,4 +264,62 @@ a {
 
 .link-wrapper:hover .link-icon {
   padding-left: 0.8rem;
+}
+
+/** advertisment testemonial */
+
+.advertisment-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.advertisment-testemonial {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  margin-right: 0.6rem;
+  max-width: 370px;
+  box-shadow: 0 0 5px lightgray;
+  /**for sliding */
+  background-size: 200% 200%;
+  transition: all 0.4s ease, transform 0.4s ease;
+}
+
+.color-hover-to-top {
+  background-image: linear-gradient(to top, var(--primary-color) 50%, #fff 0);
+  background-position: top;
+}
+
+.color-hover-to-top:hover {
+  background-position: bottom;
+}
+
+.color-hover-to-top:hover .advertisment__heading,
+.color-hover-to-top:hover .advertisment__illustration,
+.color-hover-to-top:hover .link,
+.color-hover-to-top:hover .link-wrapper,
+.color-hover-to-top:hover .advertisment__icon {
+  color: #000;
+}
+
+.advertisment__icon {
+  margin: auto;
+  display: table;
+}
+
+.advertisment-testemonial .advertisment__illustration,
+.advertisment-testemonial .link,
+.advertisment-testemonial .link-icon {
+  font-size: 1rem;
+}
+
+.advertisment-testemonial .advertisment__illustration {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.advertisment-testemonial .advertisment__heading {
+  font-size: 2rem;
 }
