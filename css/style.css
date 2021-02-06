@@ -368,6 +368,10 @@ img {
   display: table;
 }
 
+.banner .btn {
+  margin-top: 4rem;
+}
+
 @media screen and (min-width: 768px) {
   .separator {
     display: none;
