@@ -136,6 +136,10 @@ img {
   width: 100%;
 }
 
+.btn--block {
+  max-width: max-content;
+}
+
 .btn--primary {
   background-color: var(--primary-color);
   border: var(--btn-border-size) solid var(--primary-color);
@@ -154,7 +158,12 @@ img {
   color: #fff;
 }
 
-.btn--red-outline {
+.btn--hover:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.btn--accent-outline {
   margin-top: 20px;
   color: var(--accent-color);
   font-weight: bold;
@@ -163,19 +172,25 @@ img {
   box-shadow: -7px 5px var(--accent-color);
 }
 
-.btn--block {
-  max-width: max-content;
-}
-
-.btn--red-outline:hover {
+.btn--accent-outline:hover {
   background-color: var(--accent-color);
   color: #fff;
   box-shadow: none;
 }
 
-.btn--hover:hover {
+.btn--primary-outline {
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
   background-color: #fff;
-  color: #222;
+  border: var(--btn-border-size) solid var(--primary-color);
+  box-shadow: -7px 5px var(--primary-color);
+}
+
+.btn--primary-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: none;
 }
 
 /** Search input style */
