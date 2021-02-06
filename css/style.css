@@ -43,6 +43,10 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   h1 {
@@ -76,9 +80,6 @@ p {
 }
 
 /** Button Style */
-a.btn {
-  text-decoration: none;
-}
 
 .btn {
   border: var(--btn-border-size) solid transparent;
@@ -111,6 +112,25 @@ a.btn {
   background-color: var(--accent-color);
   border: var(--btn-border-size) solid var(--accent-color);
   color: #fff;
+}
+
+.btn--red-outline {
+  margin-top: 20px;
+  color: var(--accent-color);
+  font-weight: bold;
+  background-color: #fff;
+  border: var(--btn-border-size) solid var(--accent-color);
+  box-shadow: -7px 5px var(--accent-color);
+}
+
+.btn--block {
+  max-width: max-content;
+}
+
+.btn--red-outline:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  box-shadow: none;
 }
 
 .btn--hover:hover {
