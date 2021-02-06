@@ -368,10 +368,6 @@ img {
   display: table;
 }
 
-.banner .btn {
-  margin-top: 4rem;
-}
-
 @media screen and (min-width: 768px) {
   .separator {
     display: none;
@@ -385,5 +381,10 @@ img {
   .banner__heading {
     text-align: left;
     padding-left: 4rem;
+  }
+  .logo {
+    margin-bottom: 0;
+    position: relative;
+    bottom: -48px;
   }
 }
