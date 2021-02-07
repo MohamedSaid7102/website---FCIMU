@@ -273,6 +273,7 @@ img {
 
 .link {
   font-weight: 900;
+  outline: none;
 }
 
 .link-wrapper {
@@ -516,9 +517,20 @@ img {
 /**cards sectoin */
 
 .card {
-  max-width: 300px;
   box-shadow: 0 0 5px rgb(233, 233, 233);
+  height: 400px;
+  margin: 0 1rem;
+  max-width: 300px;
+  overflow: auto;
   transition: all 150ms ease-in-out;
+}
+
+.card-photo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-height: 11rem;
+  overflow: hidden;
 }
 
 .center-text {
@@ -552,6 +564,11 @@ img {
   opacity: 0.8;
 }
 
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 0;
+  }
+}
 /** Familys section */
 .familys-section {
   display: flex;
@@ -560,6 +577,11 @@ img {
   align-items: center;
   column-gap: 1rem;
   row-gap: 1rem;
+}
+.families-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 400%;
 }
 
 /** What makes us stands out section */
