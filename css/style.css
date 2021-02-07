@@ -406,3 +406,27 @@ img {
     bottom: -48px;
   }
 }
+
+/** icons Style */
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.round-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.icon--primary {
+  background-color: var(--primary-color);
+}
+
+.icon--white {
+  fill: #fff;
+}
