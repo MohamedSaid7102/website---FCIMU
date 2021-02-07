@@ -69,7 +69,7 @@ a {
 
 ::placeholder {
   color: lightgray;
-  font-size: var(--input-font-size);
+  font-size: 1.3rem;
 }
 
 /* Small Devices, Tablets */
@@ -661,4 +661,71 @@ img {
   .description__heading {
     text-align: left;
   }
+}
+
+/** Form & contact */
+.contact__description .description__paragraph {
+  padding: 0 1rem;
+}
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 500px) {
+  .flex-group {
+    flex-wrap: nowrap;
+  }
+}
+.form-group {
+  padding: 1rem;
+  width: 100%;
+}
+.lable {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  padding-left: 0;
+  white-space: nowrap;
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+}
+
+.contact__img {
+  align-self: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+.text-input {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dddddd;
+  font-size: var(--input-font-size);
+  width: 100%;
+  resize: none;
+}
+
+.text-input:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 0.2rem 0.4rem;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  resize: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
