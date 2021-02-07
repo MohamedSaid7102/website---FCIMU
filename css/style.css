@@ -47,7 +47,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 h2 {
   font-size: 2rem;
@@ -95,7 +95,7 @@ a {
     font-size: 5rem;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   h3 {
     font-size: 2rem;
@@ -112,7 +112,7 @@ img {
 }
 .block-container {
   max-width: 1140px;
-  margin: auto;
+  margin: 5rem auto;
 }
 .grid {
   display: grid;
@@ -142,7 +142,9 @@ img {
   display: block;
   width: 100%;
 }
-
+.bannerButton {
+  margin-top: 4rem;
+}
 .btn--block {
   max-width: max-content;
 }
@@ -179,6 +181,21 @@ img {
   box-shadow: -7px 5px var(--accent-color);
 }
 
+.btn--green-outline {
+  margin-top: 20px;
+  color: #83bb77;
+  font-weight: bold;
+  background-color: #fff;
+  border: var(--btn-border-size) solid#83BB77;
+  box-shadow: -7px 5px #83bb77;
+}
+
+.btn--green-outline:hover {
+  background-color: #83bb77;
+  color: #fff;
+  box-shadow: none;
+}
+
 .btn--accent-outline:hover {
   background-color: var(--accent-color);
   color: #fff;
@@ -186,7 +203,7 @@ img {
 }
 
 .btn--primary-outline {
-  margin-top: 20px;
+  margin-top: 3rem;
   color: var(--primary-color);
   font-weight: bold;
   background-color: #fff;
@@ -201,7 +218,17 @@ img {
 }
 
 /** Search input style */
+.search-sectoin.block-container {
+  max-width: 900px;
+  padding: 0 2rem;
+}
+.search__heading {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0.5rem;
+}
 .input-group {
+  margin: 4rem auto;
   display: flex;
   overflow: hidden;
   border-bottom: var(--btn-border-size) solid var(--secondary-color);
@@ -258,6 +285,7 @@ img {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  visibility: hidden;
 }
 
 .return-to-top:hover {
@@ -267,8 +295,15 @@ img {
 .return-to-top .return__icon {
   font-size: 3.1rem;
   color: #fff;
+  position: relative;
+  right: 7.5px;
 }
 
+@media only screen and (min-width: 768px) {
+  .return-to-top {
+    visibility: visible;
+  }
+}
 /** link style */
 
 .link {
@@ -305,14 +340,17 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 5rem;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
 }
 
 .advertisment-testemonial {
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  margin-right: 0.6rem;
   max-width: 370px;
   box-shadow: 0 0 5px lightgray;
+  margin: 0 1rem;
+  cursor: default;
   /**for sliding */
   background-size: 200% 200%;
   transition: all 0.4s ease, transform 0.4s ease;
@@ -355,7 +393,11 @@ img {
 .advertisment-testemonial .advertisment__heading {
   font-size: 2rem;
 }
-
+@media only screen and (min-width: 768px) {
+  .advertisment-testemonial {
+    margin: 0;
+  }
+}
 /** Banner & Heading section */
 
 .logo {
@@ -370,10 +412,18 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+.banner-grid .headding__info {
+  align-self: center;
+}
 .separator {
   width: 20%;
   margin: 2rem auto;
   display: table;
+}
+
+.banner-grid.block-container {
+  max-width: 1300px;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 856px) {
@@ -585,9 +635,16 @@ img {
 }
 
 /** What makes us stands out section */
+.unique-features__description .description__paragraph {
+  padding: 0 1rem;
+}
 .description__heading {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.description__heading .description__header {
+  font-size: 3rem;
 }
 .unique-features__img > img {
   width: 70%;
