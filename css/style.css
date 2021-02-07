@@ -561,3 +561,25 @@ img {
   column-gap: 1rem;
   row-gap: 1rem;
 }
+
+/** What makes us stands out section */
+.description__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.unique-features__img > img {
+  width: 70%;
+  margin: auto;
+  display: table;
+}
+
+.unique-features__img {
+  justify-self: center;
+  align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .description__heading {
+    text-align: left;
+  }
+}
