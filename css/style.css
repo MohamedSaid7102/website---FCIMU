@@ -98,7 +98,7 @@ a {
     font-size: 4rem;
   }
   h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   p,
   a {
@@ -429,4 +429,28 @@ img {
 
 .icon--white {
   fill: #fff;
+}
+
+/** Services sectoin style */
+
+.service__card {
+  text-align: center;
+}
+
+.service__card .round-icon {
+  margin: auto;
+}
+
+.service__card .service__card__headding {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card--left-style.service__card {
+    text-align: left;
+  }
+
+  .card--left-style.service__card .round-icon {
+    margin: 1rem;
+  }
 }
