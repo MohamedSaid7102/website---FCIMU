@@ -512,3 +512,40 @@ img {
     margin-top: 1rem;
   }
 }
+
+.card {
+  margin: 1rem;
+  box-shadow: 0 0 5px rgb(233, 233, 233);
+  transition: all 150ms ease-in-out;
+}
+
+.center-text {
+  text-align: center;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: -5px 0 8px rgb(197, 197, 197);
+  transform: translateY(-7px);
+}
+
+.card .card__content {
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0;
+}
+.card__content .card__heading {
+  font-size: 1.5rem;
+}
+.card__content .card__illustration {
+  font-size: 1rem;
+}
+.card__content .link-wrapper {
+  margin: auto;
+  margin-top: 1.5rem;
+  display: table;
+}
+.card__content .link {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  opacity: 0.8;
+}
