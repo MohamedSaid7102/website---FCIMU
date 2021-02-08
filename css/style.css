@@ -385,7 +385,7 @@ img {
 }
 
 .color-hover-to-top {
-  background-image: linear-gradient(to top, var(--primary-color) 50%, #fff 0);
+  background-image: linear-gradient(to top, #f7d937a3 50%, #fff 0);
   background-position: top;
 }
 
