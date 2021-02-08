@@ -729,3 +729,61 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/** Social media links */
+.social-media-links {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.social-media-links .social__link {
+  list-style: none;
+}
+
+.social-media-links .social__link a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(0deg, #ddd, #fff);
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  padding: 6px;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+
+.social-media-links .social__link a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.social-media-links .social__link .fa {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 100%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: all 200ms ease-in-out;
+}
+
+.faceBook:hover .fa {
+  color: #3b5998;
+}
+.twitter:hover .fa {
+  color: #55acee;
+}
+.YoutYoube:hover .fa {
+  color: #ff0000;
+}
+.linkedin:hover .fa {
+  color: #007bb5;
+}
+.instagram:hover .fa {
+  color: #bc2a8d;
+}
