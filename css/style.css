@@ -415,8 +415,10 @@ img {
 }
 
 .advertisment-testemonial {
+  overflow: auto;
   padding: 2rem 1rem;
   max-width: 370px;
+  height: 400px;
   box-shadow: 0 0 5px lightgray;
   margin: 0 1rem;
   cursor: default;
@@ -804,6 +806,7 @@ input[type="number"] {
   margin: auto;
   display: table;
   padding: 0 1rem;
+  padding-bottom: 4rem;
 }
 .social-media-links {
   display: flex;
@@ -931,7 +934,8 @@ input[type="number"] {
 }
 @media only screen and (min-width: 1000px) {
   .footer-section {
-    height: 100vh;
+    height: max-content;
+    padding-top: 3rem;
   }
   .footer__content {
     padding-top: 4rem;
