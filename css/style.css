@@ -1108,3 +1108,18 @@ input[type="number"] {
     font-size: 1.2rem;
   }
 }
+
+/** University bubble */
+.university-bubble {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 3px 5px lightgray;
+}
+.university-bubble > img {
+  object-fit: cover;
+  transform: scale(0.7);
+  margin: 1px;
+  margin-top: -4px;
+}
