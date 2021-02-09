@@ -32,6 +32,7 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
+  transition: all 200ms ease-in-out;
 }
 
 /** Typography */
@@ -143,6 +144,10 @@ img {
   color: #011f5b;
 }
 
+.light--shdow {
+  box-shadow: 0 3px 5px lightgray;
+}
+
 .grid {
   display: grid;
   row-gap: 2rem;
@@ -160,6 +165,26 @@ img {
   }
 }
 
+.flex {
+  display: flex;
+}
+.flex--wrap {
+  flex-wrap: wrap;
+}
+.flex--nowrap {
+  flex-wrap: nowrap;
+}
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--row-gap-2rem {
+  row-gap: 2rem;
+}
+.flex--column-gap-1rem {
+  column-gap: 1rem;
+}
 /** Button Style */
 
 .btn {
@@ -945,11 +970,23 @@ input[type="number"] {
 
 /** mini-calender */
 .mini-calender {
-  height: 80px;
-  width: 70px;
-  box-shadow: 0 3px 5px lightgrey;
+  max-width: 60px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: scale(0.85);
 }
-
+@media only screen and (min-width: 768px) {
+  .mini-calender {
+    max-width: 70px;
+  }
+  .mini-calender__day {
+    padding: 0.2;
+  }
+  .mini-calender__month {
+    padding: 0.4;
+  }
+}
 .mini-calender__month,
 .mini-calender__day {
   display: flex;
@@ -964,10 +1001,106 @@ input[type="number"] {
   letter-spacing: 0.4px;
   font-weight: 500;
   text-transform: uppercase;
+  padding: 0.5rem;
 }
 
 .mini-calender__day {
+  padding: 0.3rem;
   font-size: 2.5rem;
   font-family: "EB Garamond", serif;
   font-weight: 400;
+}
+
+/**upcomming-event-card */
+.upcomming-events-section {
+  max-width: 1560px;
+  margin: auto;
+}
+.upcomming-event-card {
+  margin: 0.3rem;
+  padding: 1rem;
+  border-right: 1px solid #999;
+  max-width: 450px;
+  height: 600px;
+  overflow: auto;
+}
+
+.upcomming-event-card--no-img .upcomming-event__img .mini-calender {
+  top: 4px;
+  box-shadow: 0 3px 4px lightgray;
+}
+.upcomming-event__img {
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.upcomming-event__img > img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 400ms ease-in-out;
+  display: block; /* remove extra space below image */
+}
+
+.upcomming-event__img > img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.upcomming-event__img .mini-calender {
+  position: absolute;
+  z-index: 200;
+  top: 10px;
+  right: 10px;
+}
+.upcomming-event__sort {
+  background-color: #fff;
+  padding: 2.3rem;
+  padding-top: 1.5rem;
+  position: absolute;
+  bottom: -25px;
+  width: 210px;
+  font-size: 1rem;
+}
+
+.upcomming-event__sort::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: rgba(1, 31, 91, 0.2);
+  position: absolute;
+  margin-top: 8px;
+}
+.upcomming-events-section h2 {
+  margin: 4rem auto;
+  width: max-content;
+  letter-spacing: 1px;
+}
+.upcomming-events-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgba(1, 31, 91, 0.2);
+  position: relative;
+  margin-top: 18px;
+}
+.upcomming-event__description__header {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.upcomming-event__description__content {
+  font-size: 1rem;
+  color: #586c93;
+}
+
+@media only screen and (min-width: 768px) {
+  .upcomming-event__sort {
+    width: 290px;
+  }
+  .upcomming-event__description__header {
+    font-size: 1.2rem;
+  }
 }
