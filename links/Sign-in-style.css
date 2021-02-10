@@ -386,7 +386,9 @@ a {
   display: inline-block;
   margin: 0 0.3rem;
 }
-
+.footer__lables ul li:hover {
+  color: #888;
+}
 .university-bubble {
   object-fit: cover;
   width: 100%;
