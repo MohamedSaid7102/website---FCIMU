@@ -1,9 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+:root {
+  --white: #fff;
+  --google-blue: #4285f4;
+  --button-active-blue: #1669f2;
+}
 body {
   margin: 0;
   color: #6a6f8c;
   background: #c8c8c821;
   font: 600 16px/18px "Open Sans", sans-serif;
 }
+
+.bg-image {
+  /* The image used */
+  background-image: url("images/signin-background-1.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 *,
 :after,
 :before {
@@ -28,6 +53,17 @@ a {
   display: flex;
   justify-content: center;
 }
+.use-icon {
+  max-width: 15px;
+}
+.lable-info {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
 .login-wrap {
   width: 100%;
   margin: 1rem;
@@ -197,7 +233,7 @@ a {
 
 .sign-in-htm .hr {
   height: 2px;
-  margin: 90px 0 60px 0;
+  margin: 50px 0 60px 0;
   background: rgba(255, 255, 255, 0.2);
 }
 .sign-up-htm .hr {
@@ -216,54 +252,21 @@ a {
   display: grid;
   row-gap: 2rem;
   column-gap: 2rem;
+  align-items: center;
 }
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
+.sign-in-image {
+  margin: 2rem auto 0rem;
+  width: 100%;
+  padding: 0 0.8rem;
+  max-width: 400px;
+}
+@media only screen and (min-width: 834px) {
+  .sign-in-image {
+    order: 2;
+  }
   .grid-template-2x {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-/** University bubble */
-.university-bubble {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  overflow: hidden;
-  box-shadow: 0 3px 5px lightgray;
-  display: flex;
-  margin: 2rem auto;
-}
-.university-bubble > img {
-  object-fit: cover;
-  margin: 1px;
-  margin-top: -4px;
-}
-
-.sign-in__heading {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.sign-in__heading h1 {
-  padding: 0 0.1rem;
-  line-height: 1.5;
-  color: #555;
-  text-align: center;
-  margin: auto;
-}
-
-.sign-in__info p {
-  line-height: 1.5;
-  padding-left: 0.1rem;
-  max-width: 50ch;
-  text-align: center;
-  margin: auto;
-}
-
-@media only screen and (min-width: 768px) {
   .sign-in__info p {
     text-align: left;
     padding-left: 2rem;
@@ -279,4 +282,121 @@ a {
   .sign-in__heading .university-bubble {
     margin-right: 1rem;
   }
+}
+/**continue with google */
+.btn {
+  border: var(--btn-border-size) solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 0 2rem;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  /**align */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+.btn--primary {
+  background-color: #1161ee;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn--block {
+  max-width: max-content;
+}
+
+.google-icon-wrapper {
+  min-width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 6px;
+  margin: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-icon {
+  width: 100%;
+}
+.googel-btn-text {
+  flex-grow: 1;
+  letter-spacing: 2.5px;
+}
+
+@media only screen and (max-width: 880px) and (min-width: 834px) {
+  .googel-btn-text {
+    font-size: 80%;
+  }
+
+  .google-icon-wrapper {
+    min-width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .googel-btn-text {
+    font-size: 70%;
+  }
+}
+
+/**footer */
+.page-footer {
+  background-color: #b3b3b348;
+  font-size: 0.7rem;
+  margin-top: 2rem;
+}
+.footer__copyright {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+@media only screen and (min-width: 768px) {
+  .footer__copyright {
+    flex-direction: row;
+  }
+}
+.footer__lables,
+.footer__copyright {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.footer__lables ul {
+  list-style: none;
+}
+.footer__lables ul li {
+  display: inline-block;
+  margin: 0 0.3rem;
+}
+
+.university-bubble {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 100%;
+  transform: scale(0.5);
+  box-shadow: 0 3px 5px lightgray;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.footer__copyright p {
+  margin: 0;
 }

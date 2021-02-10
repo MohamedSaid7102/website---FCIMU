@@ -34,7 +34,9 @@ body {
   box-sizing: border-box;
   transition: all 200ms ease-in-out;
 }
-
+.abcclass {
+  border-radius: 0px;
+}
 /** Typography */
 h1,
 h2,
@@ -428,7 +430,7 @@ img {
 }
 
 .color-hover-to-top {
-  background-image: linear-gradient(to top, #f7d937a3 50%, #fff 0);
+  background-image: linear-gradient(to top, #78e2edd1 50%, #fff 0);
   background-position: top;
 }
 

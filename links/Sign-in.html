@@ -4,46 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing in</title>
+    <title>FCI Sing in</title>
     <link rel="stylesheet" href="Sign-in-style.css">
+    <link rel="icon" href="images/user(2).svg">
+    <!--for using font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 </head>
 <body>
-    <!--TODO: 
-        1. Set img and grid for the sign in and make it none visable incase of obile
-        2. set logo bubble
-        3. design like samsung and a heading
-        4. add icons to the labels
-        5. add img to the page to make it beautiful
-    -->
-        <!--Login Page-->
+<!--Login Page-->
 <div class="grid grid-template-2x">
-    <!--1-->
-    <div class="sign-in__info">
-        <div class="sign-in__heading">
-            <div class="university-bubble">
-                <img src="../images/bubble-logo.png" alt="" />
-            </div>
-            <h1>FCIM's Sign in Page</h1>
-        </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, deserunt aut perferendis ab ea minus.</p><br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, deserunt aut perferendis ab ea minus.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, deserunt aut perferendis ab ea minus.</p><br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, deserunt aut perferendis ab ea minus.</p>
-    </div>
     <!--2-->
     <div class="center-div">
-        <div class="login-wrap">      
+        <div class="login-wrap">
             <div class="login-html">
                 <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
                 <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
                 <form action="#" method="POST" class="login-form">
                 <div class="sign-in-htm">
                     <div class="group">
-                    <label for="user" class="label">Username</label>
+                    <div class="lable-info">
+                        <i class="fa fa-user"></i>
+                        <label for="user" class="label">Username</label>
+                    </div>
                     <input id="user" type="text" class="input" autocomplete="off">
                     </div>
                     <div class="group">
+                    <div class="lable-info">
+                    <i class="fa fa-lock"></i>
                     <label for="pass" class="label">Password</label>
+                    </div>
                     <input id="pass" type="password" class="input" data-type="password" autocomplete="off">
                     </div>
                     <div class="group">
@@ -53,6 +47,17 @@
                     <div class="group">
                     <input type="submit" class="button" value="Sign In">
                     </div>
+                    <div class="group">
+                    <a class="btn btn--primary">
+                        <div class="google-icon-wrapper">
+                            <img
+                            class="google-icon"
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                            />
+                        </div>
+                        <p class="googel-btn-text"><b>Sign in with google</b></p>
+                        </a>
+                    </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
                     <a href="#forgot">Forgot Password?</a>
@@ -60,19 +65,31 @@
                 </div>
                 <div class="sign-up-htm">
                     <div class="group">
-                    <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input" autocomplete="off">
+                        <div class="lable-info">
+                            <i class="fa fa-user"></i>
+                            <label for="user" class="label">Username</label>
+                        </div>
+                        <input id="user" type="text" class="input" autocomplete="off">
                     </div>
                     <div class="group">
-                    <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password" autocomplete="off">
+                        <div class="lable-info">
+                            <i class="fa fa-lock"></i>
+                        <label for="pass" class="label">Password</label>
+                            </div>
+                        <input id="pass" type="password" class="input" data-type="password" autocomplete="off">
                     </div>
                     <div class="group">
-                    <label for="pass" class="label">Repeat Password</label>
-                    <input id="pass" type="password" class="input" data-type="password" autocomplete="off">
+                        <div class="lable-info">
+                            <i class="fa fa-lock"></i>
+                            <label for="pass" class="label">Repeat Password</label>
+                        </div>
+                        <input id="pass" type="password" class="input" data-type="password" autocomplete="off">
                     </div>
                     <div class="group">
-                    <label for="pass" class="label">Email Address</label>
+                        <div class="lable-info">
+                            <i class="fa fa-envelope-open"></i>
+                            <label for="pass" class="label">Email Address</label>
+                        </div>
                     <input id="pass" type="text" class="input" autocomplete="off">
                     </div>
                     <div class="group">
@@ -85,8 +102,22 @@
                 </div>
                 </div>
             </div>
-            </div>
+        </div>
+    <img src="../images/logo.png" alt="" class="sign-in-image"/>
     </div>
 </div>
+<footer class="page-footer grid grid-template-2x">
+    <div class="footer__copyright">
+        <img src="../images/bubble-logo.png" alt="" class="university-bubble"/>
+      <p>Copyright &copy; 2021 | <a href="">Mohamed Said Shelf</a></p></div>
+    <div class="footer__lables">
+        <ul>
+            <li><a href="">Terms and conditions &nbsp;|</a></li>
+            <li><a href="">Privace policy &nbsp;|</a></li>
+            <li><a href="">Notice &nbsp;|</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
