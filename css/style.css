@@ -430,7 +430,7 @@ img {
 }
 
 .color-hover-to-top {
-  background-image: linear-gradient(to top, #78e2edd1 50%, #fff 0);
+  background-image: linear-gradient(to top, #cdcdcd66 50%, #fff 0);
   background-position: top;
 }
 
@@ -1220,3 +1220,27 @@ input[type="number"] {
 .FAQ__content__descrtion {
   margin-bottom: 1rem;
 }
+
+/**********************
+ * 
+ * 
+ * Test
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+/**********************
+ * 
+ * 
+ * Test
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
