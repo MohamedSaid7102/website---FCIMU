@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--all meta tags-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menofia - FCI</title>
+    <!--for SEO (Search Engin Optmization)-->
+    <meta name="description" content="Menofia FCI" />
+    <!--Open Graph meta tags-->
+    <meta property="og:title" content="FCIM" />
+    <meta property="og:type" content="univirsity website" />
+    <meta
+      property="og:description"
+      content="Faculty of computers and informations - Menofia univirsity Website"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="images/logo.png" />
     <link rel="icon" href="images/bubble-logo.png" class="abcclass" />
+    <title>Menofia - FCI</title>
     <link rel="stylesheet" href="css/Normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!--importing fonts from Google fonts website-->
@@ -28,353 +40,347 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <!--for AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!--Banner Section-->
-    <header class="grid grid-template-2x banner-grid block-container">
-      <div class="headding__info">
-        <h1 class="banner__heading">faculty of computers and informations</h1>
-        <!--        <img src="images/logo.png" alt="university logo" class="logo" />
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <nav class="nav-bar grid grid-template-2x-3x">
+        <img src="images/logo.png" alt="" />
+        <dl class="Nav__sectoin">
+          <dt>About the faculty</dt>
+          <dd><a href="#">History</a></dd>
+          <dd><a href="#">Mission</a></dd>
+          <dd><a href="#">Vision</a></dd>
+          <dd><a href="#">Photo Gallery</a></dd>
+        </dl>
+        <dl class="Nav__sectoin">
+          <dt>Faculty Students</dt>
+          <dd>
+            <a href="#"> Postgraduate</a>
+          </dd>
+          <dd>
+            <a href="#">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                  Lorem 2 <i class="fa fa-ellipsis-v"></i>
+                </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div></a
+            >
+          </dd>
+        </dl>
+        <dl class="Nav__sectoin">
+          <dt>Faculty Staff</dt>
+          <dd><a href="#">Lorem, ipsum.</a></dd>
+          <dd>
+            <a href="#">
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                  Undergraduate <i class="fa fa-ellipsis-v"></i>
+                </button>
+
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div></a
+            >
+          </dd>
+
+          <dd><a href="#"></a></dd>
+          <dd><a href="#">Prof</a></dd>
+          <dd><a href="#">academic lorem</a></dd>
+        </dl>
+        <dl class="Nav__sectoin">
+          <dt>Departments</dt>
+          <dd><a href="#">Computer Science</a></dd>
+          <dd><a href="#">Information Technology</a></dd>
+          <dd><a href="#">Information Systems</a></dd>
+          <dd><a href="#">Operation Research & D.M</a></dd>
+        </dl>
+        <dl class="Nav__sectoin">
+          <dt>Other Utilities</dt>
+          <dd><a href="#">Faculty Guid</a></dd>
+          <dd><a href="#">Quality</a></dd>
+          <dd><a href="#">Services</a></dd>
+          <dd><a href="#">Students Activities</a></dd>
+        </dl>
+        <div class="icon-bar right--align" id="s-m-icons">
+          <a href="#" class="facebook facebook-side"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="#" class="twitter twitter-side"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="#" class="google google-side"
+            ><i class="fa fa-google"></i
+          ></a>
+          <a href="#" class="linkedin linkedin-side"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="#" class="youtube youtube-side"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </div>
+      </nav>
+    </div>
+    <main id="main">
+      <header class="header flex flex--wrap flex--center">
+        <span class="nav-icon" onclick="openNav()">&#9776;</span>
+        <img src="images/logo.png" alt="" />
+      </header>
+      <!--main content of the page over here ↓ -->
+      <!--Banner Section-->
+      <header
+        class="header-sec grid grid-template-2x banner-grid block-container"
+      >
+        <div class="headding__info">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="banner__heading"
+          >
+            faculty of computers and informations
+          </h1>
+          <!--        <img src="images/logo.png" alt="university logo" class="logo" />
   -->
-        <img src="images/separator.png" alt="/" class="separator" />
-      </div>
-      <div class="banner">
-        <img src="images/banner.png" alt="" />
-        <a
-          href="links/Sign-in.html"
-          class="btn btn--primary btn--hover bannerButton"
-        >
-          Sign in
-        </a>
-      </div>
-    </header>
-
-    <!-- return to top button-->
-    <span class="return-to-top">
-      <a href="#" class="fa fa-arrow-circle-up return__icon"></a>
-    </span>
-
-    <!--Advertisement section-->
-    <section class="advertisment-wrapper block-container">
-      <!--1-->
-      <div class="advertisment-testemonial color-hover-to-top">
-        <!--icon-->
-        <svg
-          class="advertisment__icon"
-          width="70"
-          height="70"
-          viewBox="0 0 70 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M53.1331 28.2L59.9331 59.9333C46.3331 57.6667 44.0551 69 34.9997 69C25.9444 69 23.6664 57.6667 10.0664 59.9333L16.8664 28.2"
-            stroke="black"
-            stroke-width="1.632"
+          <img
+            src="images/separator.png"
+            alt="/"
+            class="separator"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           />
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M35 37.2667L1 19.1333L35 1L69 19.1333L35 37.2667Z"
-            stroke="black"
-            stroke-width="1.632"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M35 19.1334H69V46.3334"
-            stroke="black"
-            stroke-width="1.632"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <!--Heading-->
-        <h3 class="advertisment__heading">Academic books</h3>
-        <p class="advertisment__illustration">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
-          praesentium in, unde placeat eligendi rerum repellendus nisi assumenda
-          consequuntur optio!
-        </p>
-        <span class="link-wrapper">
-          <a href="#" class="link">Learn more</a>
-          <i class="fa fa-arrow-right link-icon"></i>
-        </span>
-      </div>
-
-      <!--2-->
-      <div class="advertisment-testemonial color-hover-to-top">
-        <!--icon-->
-        <svg
-          class="advertisment__icon"
-          width="70"
-          height="70"
-          viewBox="0 0 70 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M25.9336 1V32.7333H55.4003L66.7336 41.8L64.4669 32.7333H69.0003V1H25.9336Z"
-            stroke="black"
-            stroke-width="1.632"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M44.0667 37.2667V59.9333H14.6L3.26667 69L5.53333 59.9333H1V28.2H21.4"
-            stroke="black"
-            stroke-width="1.632"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <!--Heading-->
-        <h3 class="advertisment__heading">English Courses</h3>
-        <p class="advertisment__illustration">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
-          praesentium in, unde placeat eligendi rerum repellendus nisi assumenda
-          consequuntur optio!
-        </p>
-        <span class="link-wrapper">
-          <a href="#" class="link">Learn more</a>
-          <i class="fa fa-arrow-right link-icon"></i>
-        </span>
-      </div>
-
-      <!--3-->
-      <div class="advertisment-testemonial color-hover-to-top">
-        <!--icon-->
-        <svg
-          class="advertisment__icon"
-          width="65"
-          height="70"
-          viewBox="0 0 65 70"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M12.1753 35.1118C6.00382 35.1118 1 30.108 1 23.9366V15.1033H63.6316V23.9231C63.6316 30.1013 58.6233 35.1096 52.4451 35.1096H12.1753V35.1118Z"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-          <path
-            d="M16.6582 46.2961V26.1645"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-          <path
-            d="M47.9746 46.2961V26.1645"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-          <path
-            d="M45.7366 14.4211C45.7366 7.00816 39.7285 1 32.3156 1C24.9027 1 18.8945 7.00816 18.8945 14.4211"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-          <path
-            d="M21.1309 26.1645V46.2961"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-          <path
-            d="M43.5 26.1645V46.2961"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-          <path
-            d="M61.3942 30.6382V59.7194C61.3942 64.6583 57.3903 68.6645 52.4491 68.6645H12.1792C7.24028 68.6645 3.23633 64.6606 3.23633 59.7194V30.6382"
-            stroke="black"
-            stroke-width="1.61053"
-          />
-        </svg>
-        <!--Heading-->
-        <h3 class="advertisment__heading">school resources</h3>
-        <p class="advertisment__illustration">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
-          praesentium in, unde placeat eligendi rerum repellendus nisi assumenda
-          consequuntur optio!
-        </p>
-        <span class="link-wrapper">
-          <a href="#" class="link">Learn more</a>
-          <i class="fa fa-arrow-right link-icon"></i>
-        </span>
-      </div>
-    </section>
-
-    <!-- Search place-->
-    <div class="search-sectoin block-container">
-      <h2 class="search__heading">Want a specific thing ?</h2>
-      <div class="input-group">
-        <input type="text" class="search-input" placeholder="Search..." />
-        <a href="#" class="fa fa-search search-icon search-icon--mid-black"></a>
-      </div>
-    </div>
-
-    <!--What makes us stands out of the crowed-->
-    <section class="grid grid-template-2x block-container unique-features">
-      <div class="unique-features__img">
-        <img
-          src="images/Feature.png"
-          alt="Standing pointing women at unique Feature"
-        />
-      </div>
-      <div class="unique-features__description">
-        <div class="description__heading">
-          <h2 class="description__header">
-            What makes Menoufia-FCI stands out.
-          </h2>
-          <p class="description__paragraph">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-            expedita esse labore perferendis officiis iure soluta mollitia
-            suscipit totam cupiditate.
-          </p>
-          <img src="images/separator.png" alt="" class="separator" />
         </div>
+        <div class="banner" data-aos="fade-left" data-aos-duration="1000">
+          <img src="images/banner.png" alt="" />
+          <a
+            href="links/Sign-in.html"
+            class="btn btn--primary btn--hover bannerButton"
+          >
+            Sign in
+          </a>
+        </div>
+      </header>
+
+      <!-- return to top button-->
+      <span class="return-to-top">
+        <a href="#" class="fa fa-arrow-circle-up return__icon"></a>
+      </span>
+
+      <!--Advertisement section-->
+      <section
+        class="advertisment-wrapper block-container"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
         <!--1-->
-        <section class="service__card card--left-style">
+        <div class="advertisment-testemonial color-hover-to-top">
           <!--icon-->
-          <span class="round-icon icon--primary icon--white"
-            ><img src="icons/team.svg" alt="" class="icon"
-          /></span>
+          <svg
+            class="advertisment__icon"
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M53.1331 28.2L59.9331 59.9333C46.3331 57.6667 44.0551 69 34.9997 69C25.9444 69 23.6664 57.6667 10.0664 59.9333L16.8664 28.2"
+              stroke="black"
+              stroke-width="1.632"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M35 37.2667L1 19.1333L35 1L69 19.1333L35 37.2667Z"
+              stroke="black"
+              stroke-width="1.632"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M35 19.1334H69V46.3334"
+              stroke="black"
+              stroke-width="1.632"
+              stroke-linejoin="round"
+            />
+          </svg>
           <!--Heading-->
-          <h3 class="service__card__headding">Very Good Staff</h3>
-          <!--Paragraph-->
-          <p class="service__card__illustration">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-            consectetur deserunt enim.
+          <h3 class="advertisment__heading">Academic books</h3>
+          <p class="advertisment__illustration">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
+            praesentium in, unde placeat eligendi rerum repellendus nisi
+            assumenda consequuntur optio!
           </p>
-        </section>
+          <span class="link-wrapper">
+            <a href="#" class="link">Learn more</a>
+            <i class="fa fa-arrow-right link-icon"></i>
+          </span>
+        </div>
+
         <!--2-->
-        <section class="service__card card--left-style">
+        <div class="advertisment-testemonial color-hover-to-top">
           <!--icon-->
-          <span class="round-icon icon--primary icon--white"
-            ><img src="icons/place.svg" alt="" class="icon"
-          /></span>
+          <svg
+            class="advertisment__icon"
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.9336 1V32.7333H55.4003L66.7336 41.8L64.4669 32.7333H69.0003V1H25.9336Z"
+              stroke="black"
+              stroke-width="1.632"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M44.0667 37.2667V59.9333H14.6L3.26667 69L5.53333 59.9333H1V28.2H21.4"
+              stroke="black"
+              stroke-width="1.632"
+              stroke-linejoin="round"
+            />
+          </svg>
           <!--Heading-->
-          <h3 class="service__card__headding">Perfect positino</h3>
-          <!--Paragraph-->
-          <p class="service__card__illustration">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-            consectetur deserunt enim.
+          <h3 class="advertisment__heading">English Courses</h3>
+          <p class="advertisment__illustration">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
+            praesentium in, unde placeat eligendi rerum repellendus nisi
+            assumenda consequuntur optio!
           </p>
-        </section>
+          <span class="link-wrapper">
+            <a href="#" class="link">Learn more</a>
+            <i class="fa fa-arrow-right link-icon"></i>
+          </span>
+        </div>
+
         <!--3-->
-        <section class="service__card card--left-style">
+        <div class="advertisment-testemonial color-hover-to-top">
           <!--icon-->
-          <span class="round-icon icon--primary icon--white"
-            ><img src="icons/study.svg" alt="" class="icon"
-          /></span>
+          <svg
+            class="advertisment__icon"
+            width="65"
+            height="70"
+            viewBox="0 0 65 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.1753 35.1118C6.00382 35.1118 1 30.108 1 23.9366V15.1033H63.6316V23.9231C63.6316 30.1013 58.6233 35.1096 52.4451 35.1096H12.1753V35.1118Z"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+            <path
+              d="M16.6582 46.2961V26.1645"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+            <path
+              d="M47.9746 46.2961V26.1645"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+            <path
+              d="M45.7366 14.4211C45.7366 7.00816 39.7285 1 32.3156 1C24.9027 1 18.8945 7.00816 18.8945 14.4211"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+            <path
+              d="M21.1309 26.1645V46.2961"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+            <path
+              d="M43.5 26.1645V46.2961"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+            <path
+              d="M61.3942 30.6382V59.7194C61.3942 64.6583 57.3903 68.6645 52.4491 68.6645H12.1792C7.24028 68.6645 3.23633 64.6606 3.23633 59.7194V30.6382"
+              stroke="black"
+              stroke-width="1.61053"
+            />
+          </svg>
           <!--Heading-->
-          <h3 class="service__card__headding">Powerfull Curriculum</h3>
-          <!--Paragraph-->
-          <p class="service__card__illustration">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-            consectetur deserunt enim.
+          <h3 class="advertisment__heading">school resources</h3>
+          <p class="advertisment__illustration">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
+            praesentium in, unde placeat eligendi rerum repellendus nisi
+            assumenda consequuntur optio!
           </p>
-        </section>
-      </div>
-    </section>
+          <span class="link-wrapper">
+            <a href="#" class="link">Learn more</a>
+            <i class="fa fa-arrow-right link-icon"></i>
+          </span>
+        </div>
+      </section>
 
-    <!-- Family Section-->
-    <div class="block-container families-section">
-      <h3 class="families-header">Meet Our Families</h3>
-      <div class="familys-section">
-        <!--1 - mufix -->
-        <div class="card center-text">
-          <div class="card-photo">
-            <img src="images/MUFIX.jpg" alt="" />
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">MUFIX Community</h3>
-            <p class="card__illustration">
-              MUFIX Community,founded,at Menoufia University Faculty of
-              Computers and Information in 2005.
-            </p>
-            <span class="link-wrapper">
-              <a href="http://www.mufix.org" class="link">MUFIX Home Page</a>
-              <i class="fa fa-arrow-right link-icon"></i>
-            </span>
-          </div>
-        </div>
-        <!--1 - Alef  -->
-        <div class="card center-text">
-          <div class="card-photo">
-            <img src="images/ALEF.jpg" alt="" />
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">Alef Community</h3>
-            <p class="card__illustration">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              totam reprehenderit sunt ipsa possimus?
-            </p>
-            <span class="link-wrapper">
-              <a href="https://www.facebook.com/new.alef.1" class="link"
-                >Alef Home Page</a
-              >
-              <i class="fa fa-arrow-right link-icon"></i>
-            </span>
-          </div>
-        </div>
-        <!--3 - ICPC -->
-        <div class="card center-text">
-          <div class="card-photo">
-            <img src="images/ICPC.jpg" alt="" />
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">ICPC Community</h3>
-            <p class="card__illustration">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              totam reprehenderit sunt ipsa possimus?
-            </p>
-            <span class="link-wrapper">
-              <a href="https://www.facebook.com/icpc.menofia.5" class="link"
-                >ICPC Home Page</a
-              >
-              <i class="fa fa-arrow-right link-icon"></i>
-            </span>
-          </div>
-        </div>
-        <!--4 - Compiler  -->
-        <div class="card center-text">
-          <div class="card-photo">
-            <img src="images/Compiler.jpg" alt="" />
-          </div>
-          <div class="card__content">
-            <h3 class="card__heading">Compiler Community</h3>
-            <p class="card__illustration">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              totam reprehenderit sunt ipsa possimus?
-            </p>
-            <span class="link-wrapper">
-              <a href="https://www.facebook.com/compiler.fci.71" class="link"
-                >Compiler Home Page</a
-              >
-              <i class="fa fa-arrow-right link-icon"></i>
-            </span>
-          </div>
+      <!-- Search place-->
+      <div
+        class="search-sectoin block-container"
+        data-aos="zoom-in-up"
+        data-aos-duration="800"
+      >
+        <h2 class="search__heading">Want a specific thing ?</h2>
+        <div class="input-group">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <a
+            href="#"
+            class="fa fa-search search-icon search-icon--mid-black"
+          ></a>
         </div>
       </div>
-    </div>
 
-    <!--Services sectoin-->
-    <div class="services-sectoin-wrapper block-container">
-      <h2 class="services-section__header">Check out the services.</h2>
-      <p class="services-section__ilustration">
-        This website is developed in a way that serve all needs .. check out
-        this section to know more about the services that we provide here.
-      </p>
-      <sectoin class="services-section">
-        <!--left__services-cards-->
-        <div>
+      <!--What makes us stands out of the crowed-->
+      <section class="grid grid-template-2x block-container unique-features">
+        <div class="unique-features__img">
+          <img
+            src="images/Feature.png"
+            alt="Standing pointing women at unique Feature"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          />
+        </div>
+        <div class="unique-features__description">
+          <div class="description__heading">
+            <h2 class="description__header">
+              What makes Menoufia-FCI stands out.
+            </h2>
+            <p class="description__paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+              expedita esse labore perferendis officiis iure soluta mollitia
+              suscipit totam cupiditate.
+            </p>
+            <img src="images/separator.png" alt="" class="separator" />
+          </div>
           <!--1-->
-          <section class="service__card card--right-style">
+          <section
+            class="service__card card--left-style"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
             <!--icon-->
-            <span class="round-icon icon--primary"
-              ><img src="icons/phone-call.svg" alt="" class="icon"
+            <span class="round-icon icon--primary icon--white"
+              ><img src="icons/team.svg" alt="" class="icon"
             /></span>
             <!--Heading-->
-            <h3 class="service__card__headding">24/7 Support</h3>
+            <h3 class="service__card__headding">Very Good Staff</h3>
             <!--Paragraph-->
             <p class="service__card__illustration">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
@@ -382,13 +388,18 @@
             </p>
           </section>
           <!--2-->
-          <section class="service__card card--right-style">
+          <section
+            class="service__card card--left-style"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+            data-aos-delay="250"
+          >
             <!--icon-->
-            <span class="round-icon icon--primary"
-              ><img src="icons/download.svg" alt="" class="icon"
+            <span class="round-icon icon--primary icon--white"
+              ><img src="icons/place.svg" alt="" class="icon"
             /></span>
             <!--Heading-->
-            <h3 class="service__card__headding">Curriculum Download</h3>
+            <h3 class="service__card__headding">Perfect positino</h3>
             <!--Paragraph-->
             <p class="service__card__illustration">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
@@ -396,13 +407,18 @@
             </p>
           </section>
           <!--3-->
-          <section class="service__card card--right-style">
+          <section
+            class="service__card card--left-style"
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+            data-aos-delay="350"
+          >
             <!--icon-->
-            <span class="round-icon icon--primary"
-              ><img src="icons/database.svg" alt="" class="icon"
+            <span class="round-icon icon--primary icon--white"
+              ><img src="icons/study.svg" alt="" class="icon"
             /></span>
             <!--Heading-->
-            <h3 class="service__card__headding">DataBase access</h3>
+            <h3 class="service__card__headding">Powerfull Curriculum</h3>
             <!--Paragraph-->
             <p class="service__card__illustration">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
@@ -410,442 +426,754 @@
             </p>
           </section>
         </div>
-        <!--Service img-->
-        <div class="services__img">
-          <img src="images/Standing women.png" alt="Standing women" />
-        </div>
-        <!--right__services-cards-->
-        <div>
-          <!--4-->
-          <section class="service__card card--left-style">
-            <!--icon-->
-            <span class="round-icon icon--primary"
-              ><img src="icons/calculator.svg" alt="" class="icon"
-            /></span>
-            <!--Heading-->
-            <h3 class="service__card__headding">GPA Calculator</h3>
-            <!--Paragraph-->
-            <p class="service__card__illustration">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-              consectetur deserunt enim.
-            </p>
-          </section>
-          <!--5-->
-          <section class="service__card card--left-style">
-            <!--icon-->
-            <span class="round-icon icon--primary"
-              ><img src="icons/team.svg" alt="" class="icon"
-            /></span>
-            <!--Heading-->
-            <h3 class="service__card__headding">Staff info</h3>
-            <!--Paragraph-->
-            <p class="service__card__illustration">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-              consectetur deserunt enim.
-            </p>
-          </section>
-          <!--6-->
-          <section class="service__card card--left-style">
-            <!--icon-->
-            <span class="round-icon icon--primary"
-              ><img src="icons/information.svg" alt="" class="icon"
-            /></span>
-            <!--Heading-->
-            <h3 class="service__card__headding">School Guide</h3>
-            <!--Paragraph-->
-            <p class="service__card__illustration">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-              consectetur deserunt enim.
-            </p>
-          </section>
-        </div>
-      </sectoin>
-    </div>
+      </section>
 
-    <!--Upcomming section-->
-    <section class="upcomming-events-section">
-      <h2>Upcoming Events</h2>
+      <!-- Family Section-->
       <div
-        class="flex flex--wrap flex--row-gap-2rem flex--column-gap-1rem flex--center"
+        class="block-container families-section"
+        data-aos="zoom-in"
+        data-aos-duration="1300"
+        data-aos-delay="400"
       >
-        <!--1st card-->
-        <a href="#">
-          <div class="upcomming-event-card">
-            <div class="upcomming-event__img">
-              <img src="images/Up-cpmming-1.jpg" alt="" />
-              <div class="mini-calender light--shdow">
-                <div class="mini-calender__month bg--dark-red txt--white">
-                  FEB
-                </div>
-                <div class="mini-calender__day bg--white txt--dark-blue">
-                  11
-                </div>
-              </div>
-              <div class="upcomming-event__sort txt--dark-blue">Talks</div>
+        <h3 class="families-header">Meet Our Families</h3>
+        <div class="familys-section">
+          <!--1 - mufix -->
+          <div class="card center-text">
+            <div class="card-photo">
+              <img src="images/MUFIX.jpg" alt="" />
             </div>
-            <div class="upcomming-event__description">
-              <h3 class="upcomming-event__description__header txt--dark-blue">
-                Worst Case Scenarios: AI
-              </h3>
-              <p class="upcomming-event__description__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                adipisci fuga nam nulla laboriosam rerum officiis amet
-                laudantium totam odio quisquam quia vitae odit corrupti, iste
-                voluptatibus iusto reiciendis quas.
+            <div class="card__content">
+              <h3 class="card__heading">MUFIX Community</h3>
+              <p class="card__illustration">
+                MUFIX Community,founded,at Menoufia University Faculty of
+                Computers and Information in 2005.
               </p>
+              <span class="link-wrapper">
+                <a href="http://www.mufix.org" class="link">MUFIX Home Page</a>
+                <i class="fa fa-arrow-right link-icon"></i>
+              </span>
             </div>
           </div>
-        </a>
-        <!--2nd card-->
-        <a href="#">
-          <div class="upcomming-event-card">
-            <div class="upcomming-event__img">
-              <img src="images/Up-comming-2.jpg" alt="" />
-              <div class="mini-calender">
-                <div class="mini-calender__month bg--dark-red txt--white">
-                  ABRi
-                </div>
-                <div class="mini-calender__day bg--white txt--dark-blue">9</div>
-              </div>
-              <div class="upcomming-event__sort txt--dark-blue">Screenings</div>
+          <!--1 - Alef  -->
+          <div class="card center-text">
+            <div class="card-photo">
+              <img src="images/ALEF.jpg" alt="" />
             </div>
-            <div class="upcomming-event__description">
-              <h3 class="upcomming-event__description__header txt--dark-blue">
-                Worst Case Scenarios: AI
-              </h3>
-              <p class="upcomming-event__description__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                adipisci fuga nam nulla laboriosam rerum officiis amet
-                laudantium totam odio quisquam quia vitae odit corrupti, iste
-                voluptatibus iusto reiciendis quas.
+            <div class="card__content">
+              <h3 class="card__heading">Alef Community</h3>
+              <p class="card__illustration">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                totam reprehenderit sunt ipsa possimus?
               </p>
+              <span class="link-wrapper">
+                <a href="https://www.facebook.com/new.alef.1" class="link"
+                  >Alef Home Page</a
+                >
+                <i class="fa fa-arrow-right link-icon"></i>
+              </span>
             </div>
           </div>
-        </a>
-        <!--3ed card-->
-        <a href="#">
-          <div class="upcomming-event-card">
-            <div class="upcomming-event__img">
-              <img src="images/Up-comming-3.jpg" alt="" />
-              <div class="mini-calender">
-                <div class="mini-calender__month bg--dark-red txt--white">
-                  FEB
-                </div>
-                <div class="mini-calender__day bg--white txt--dark-blue">2</div>
-              </div>
-              <div class="upcomming-event__sort txt--dark-blue">Talks</div>
+          <!--3 - ICPC -->
+          <div class="card center-text">
+            <div class="card-photo">
+              <img src="images/ICPC.jpg" alt="" />
             </div>
-            <div class="upcomming-event__description">
-              <h3 class="upcomming-event__description__header txt--dark-blue">
-                How Books changing the world
-              </h3>
-              <p class="upcomming-event__description__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                adipisci fuga nam nulla laboriosam rerum officiis amet
-                laudantium totam odio quisquam quia vitae odit corrupti, iste
-                voluptatibus iusto reiciendis quas.
+            <div class="card__content">
+              <h3 class="card__heading">ICPC Community</h3>
+              <p class="card__illustration">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                totam reprehenderit sunt ipsa possimus?
               </p>
+              <span class="link-wrapper">
+                <a href="https://www.facebook.com/icpc.menofia.5" class="link"
+                  >ICPC Home Page</a
+                >
+                <i class="fa fa-arrow-right link-icon"></i>
+              </span>
             </div>
           </div>
-        </a>
-        <!--4th card-->
-        <a href="#">
-          <div class="upcomming-event-card">
-            <div class="upcomming-event__img">
-              <img src="images/Up-comming-4.jpg" alt="" />
-              <div class="mini-calender">
-                <div class="mini-calender__month bg--dark-red txt--white">
-                  Marc
-                </div>
-                <div class="mini-calender__day bg--white txt--dark-blue">
-                  15
-                </div>
-              </div>
-              <div class="upcomming-event__sort txt--dark-blue">Lecture</div>
+          <!--4 - Compiler  -->
+          <div class="card center-text">
+            <div class="card-photo">
+              <img src="images/Compiler.jpg" alt="" />
             </div>
-            <div class="upcomming-event__description">
-              <h3 class="upcomming-event__description__header txt--dark-blue">
-                develop your coding skills
-              </h3>
-              <p class="upcomming-event__description__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                adipisci fuga nam nulla laboriosam rerum officiis amet
-                laudantium totam odio quisquam quia vitae odit corrupti, iste
-                voluptatibus iusto reiciendis quas.
+            <div class="card__content">
+              <h3 class="card__heading">Compiler Community</h3>
+              <p class="card__illustration">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                totam reprehenderit sunt ipsa possimus?
               </p>
+              <span class="link-wrapper">
+                <a href="https://www.facebook.com/compiler.fci.71" class="link"
+                  >Compiler Home Page</a
+                >
+                <i class="fa fa-arrow-right link-icon"></i>
+              </span>
             </div>
           </div>
-        </a>
-        <!--5th card-->
-        <a href="#">
-          <div class="upcomming-event-card upcomming-event-card--no-img">
-            <div class="upcomming-event__img">
-              <div class="mini-calender">
-                <div class="mini-calender__month bg--dark-red txt--white">
-                  Marc
-                </div>
-                <div class="mini-calender__day bg--white txt--dark-blue">2</div>
-              </div>
-              <div class="upcomming-event__sort txt--dark-blue">Audio</div>
-            </div>
-            <div class="upcomming-event__description">
-              <h3 class="upcomming-event__description__header txt--dark-blue">
-                How better listing can affect your life
-              </h3>
-              <p class="upcomming-event__description__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                adipisci fuga nam nulla laboriosam rerum officiis amet
-                laudantium totam odio quisquam quia vitae odit corrupti, iste
-                voluptatibus iusto reiciendis quas.
-              </p>
-            </div>
-          </div>
-        </a>
-        <!--6th card-->
-        <a href="#">
-          <div class="upcomming-event-card">
-            <div class="upcomming-event__img">
-              <img src="images/Up-comming-6.jpg" alt="" />
-              <div class="mini-calender light--shdow">
-                <div class="mini-calender__month bg--dark-red txt--white">
-                  May
-                </div>
-                <div class="mini-calender__day bg--white txt--dark-blue">8</div>
-              </div>
-              <div class="upcomming-event__sort txt--dark-blue">Lecture</div>
-            </div>
-            <div class="upcomming-event__description">
-              <h3 class="upcomming-event__description__header txt--dark-blue">
-                Pro remote working Advice
-              </h3>
-              <p class="upcomming-event__description__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-                adipisci fuga nam nulla laboriosam rerum officiis amet
-                laudantium totam odio quisquam quia vitae odit corrupti, iste
-                voluptatibus iusto reiciendis quas.
-              </p>
-            </div>
-          </div>
-        </a>
+        </div>
       </div>
-    </section>
 
-    <!--Expanded FAQ Question-->
-    <section class="FAQ grid grid-template-2x block-container">
-      <div class="FAQ__img">
-        <img src="images/bg-03.png" alt="" />
-      </div>
-      <div class="FAQ__content">
-        <h2>FAQ</h2>
-        <p class="FAQ__content__descrtion">
-          These are the most frequantly asked question students ask
+      <!--Services sectoin-->
+      <div class="services-sectoin-wrapper block-container">
+        <h2 class="services-section__header">Check out the services.</h2>
+        <p class="services-section__ilustration">
+          This website is developed in a way that serve all needs .. check out
+          this section to know more about the services that we provide here.
         </p>
-        <button class="accordion">How to Lorem ipsum, dolor sit</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <button class="accordion">What is Lorem ipsum, dolor sit</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <button class="accordion">What about Lorem ipsum, dolor sit</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <button class="accordion">Why Lorem ipsum, dolor sit</button>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
+        <sectoin class="services-section">
+          <!--left__services-cards-->
+          <div>
+            <!--1-->
+            <section
+              class="service__card card--right-style"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="300"
+            >
+              <!--icon-->
+              <span class="round-icon icon--primary"
+                ><img src="icons/phone-call.svg" alt="" class="icon"
+              /></span>
+              <!--Heading-->
+              <h3 class="service__card__headding">24/7 Support</h3>
+              <!--Paragraph-->
+              <p class="service__card__illustration">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                consectetur deserunt enim.
+              </p>
+            </section>
+            <!--2-->
+            <section
+              class="service__card card--right-style"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="400"
+            >
+              <!--icon-->
+              <span class="round-icon icon--primary"
+                ><img src="icons/download.svg" alt="" class="icon"
+              /></span>
+              <!--Heading-->
+              <h3 class="service__card__headding">Curriculum Download</h3>
+              <!--Paragraph-->
+              <p class="service__card__illustration">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                consectetur deserunt enim.
+              </p>
+            </section>
+            <!--3-->
+            <section
+              class="service__card card--right-style"
+              data-aos="fade-right"
+              data-aos-duration="600"
+              data-aos-delay="500"
+            >
+              <!--icon-->
+              <span class="round-icon icon--primary"
+                ><img src="icons/database.svg" alt="" class="icon"
+              /></span>
+              <!--Heading-->
+              <h3 class="service__card__headding">DataBase access</h3>
+              <!--Paragraph-->
+              <p class="service__card__illustration">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                consectetur deserunt enim.
+              </p>
+            </section>
+          </div>
+          <!--Service img-->
+          <div
+            class="services__img"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <img src="images/Standing women.png" alt="Standing women" />
+          </div>
+          <!--right__services-cards-->
+          <div>
+            <!--4-->
+            <section
+              class="service__card card--left-style"
+              data-aos="fade-left"
+              data-aos-duration="600"
+              data-aos-delay="300"
+            >
+              <!--icon-->
+              <span class="round-icon icon--primary"
+                ><img src="icons/calculator.svg" alt="" class="icon"
+              /></span>
+              <!--Heading-->
+              <h3 class="service__card__headding">GPA Calculator</h3>
+              <!--Paragraph-->
+              <p class="service__card__illustration">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                consectetur deserunt enim.
+              </p>
+            </section>
+            <!--5-->
+            <section
+              class="service__card card--left-style"
+              data-aos="fade-left"
+              data-aos-duration="600"
+              data-aos-delay="400"
+            >
+              <!--icon-->
+              <span class="round-icon icon--primary"
+                ><img src="icons/team.svg" alt="" class="icon"
+              /></span>
+              <!--Heading-->
+              <h3 class="service__card__headding">Staff info</h3>
+              <!--Paragraph-->
+              <p class="service__card__illustration">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                consectetur deserunt enim.
+              </p>
+            </section>
+            <!--6-->
+            <section
+              class="service__card card--left-style"
+              data-aos="fade-left"
+              data-aos-duration="600"
+              data-aos-delay="500"
+            >
+              <!--icon-->
+              <span class="round-icon icon--primary"
+                ><img src="icons/information.svg" alt="" class="icon"
+              /></span>
+              <!--Heading-->
+              <h3 class="service__card__headding">School Guide</h3>
+              <!--Paragraph-->
+              <p class="service__card__illustration">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+                consectetur deserunt enim.
+              </p>
+            </section>
+          </div>
+        </sectoin>
       </div>
-    </section>
 
-    <!--Contact Form Section-->
-    <section class="contact grid grid-template-2x block-container">
-      <div class="contact__img">
-        <img src="images/setting man.png" alt="Setting man" />
-        <button
-          type="submit"
-          form="contact-form"
-          value="Submit"
-          class="btn btn--primary-outline"
+      <!--Upcomming section-->
+      <section class="upcomming-events-section">
+        <h2>Upcoming Events</h2>
+        <div
+          class="flex flex--wrap flex--row-gap-2rem flex--column-gap-1rem flex--center"
         >
-          Submit
-        </button>
-      </div>
-      <div class="contact__description">
-        <div class="description__heading">
-          <h2 class="description__header">Drop us a line</h2>
-          <p class="description__paragraph">
-            We would be so happy to know your opinion about FCI-Menoufia and
-            consider you messages
-          </p>
-        </div>
-        <form action="" class="contact__form" id="contact-form">
-          <div class="form__info">
-            <div class="flex-group">
-              <!-- First Name-->
-              <div class="form-group">
-                <h3 class="lable">First Name *</h3>
-                <input
-                  type="text"
-                  name="user first name"
-                  placeholder="i.e Mohamed"
-                  class="text-input"
-                  autocomplete="off"
-                />
+          <!--1st card-->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <div class="upcomming-event-card">
+              <div class="upcomming-event__img">
+                <img src="images/Up-cpmming-1.jpg" alt="" />
+                <div class="mini-calender light--shdow">
+                  <div class="mini-calender__month bg--dark-red txt--white">
+                    FEB
+                  </div>
+                  <div class="mini-calender__day bg--white txt--dark-blue">
+                    11
+                  </div>
+                </div>
+                <div class="upcomming-event__sort txt--dark-blue">Talks</div>
               </div>
-              <!--last name -->
-              <div class="form-group">
-                <h3 class="lable">Last Name *</h3>
-                <input
-                  type="text"
-                  name="user last name"
-                  placeholder="i.e Shelf"
-                  class="text-input"
-                  autocomplete="off"
-                />
+              <div class="upcomming-event__description">
+                <h3 class="upcomming-event__description__header txt--dark-blue">
+                  Worst Case Scenarios: AI
+                </h3>
+                <p class="upcomming-event__description__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, adipisci fuga nam nulla laboriosam rerum officiis amet
+                  laudantium totam odio quisquam quia vitae odit corrupti, iste
+                  voluptatibus iusto reiciendis quas.
+                </p>
               </div>
             </div>
-            <div class="flex-group">
-              <!--email-->
-              <div class="form-group">
-                <h3 class="lable">E-mail Address *</h3>
-                <input
-                  type="email"
-                  name="user email"
-                  placeholder="i.e mo..@gmail.com"
-                  class="text-input"
-                  autocomplete="off"
-                />
+          </a>
+          <!--2nd card-->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <div class="upcomming-event-card">
+              <div class="upcomming-event__img">
+                <img src="images/Up-comming-2.jpg" alt="" />
+                <div class="mini-calender">
+                  <div class="mini-calender__month bg--dark-red txt--white">
+                    ABRi
+                  </div>
+                  <div class="mini-calender__day bg--white txt--dark-blue">
+                    9
+                  </div>
+                </div>
+                <div class="upcomming-event__sort txt--dark-blue">
+                  Screenings
+                </div>
               </div>
-              <!--phone-->
-              <div class="form-group">
-                <h3 class="lable">Phone Number</h3>
-                <input
-                  type="number"
-                  name="user name"
-                  placeholder="i.e +20 01096787085"
-                  class="text-input"
-                  autocomplete="off"
-                />
+              <div class="upcomming-event__description">
+                <h3 class="upcomming-event__description__header txt--dark-blue">
+                  Worst Case Scenarios: AI
+                </h3>
+                <p class="upcomming-event__description__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, adipisci fuga nam nulla laboriosam rerum officiis amet
+                  laudantium totam odio quisquam quia vitae odit corrupti, iste
+                  voluptatibus iusto reiciendis quas.
+                </p>
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <h3 class="lable">Your Messages *</h3>
-            <textarea
-              cols="35"
-              rows="8"
-              name="User Message"
-              placeholder="Start here .."
-              class="text-input user-message"
-              autocomplete="off"
-            ></textarea>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!--Social Media Links-->
-    <div class="social-media-wrapper">
-      <ul class="social-media-links">
-        <li class="social__link">
-          <a href="#" class="faceBook"><i class="fa fa-facebook-f"></i></a>
-        </li>
-        <li class="social__link">
-          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li class="social__link">
-          <a href="#" class="YoutYoube"><i class="fa fa-youtube"></i></a>
-        </li>
-        <li class="social__link">
-          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </li>
-        <li class="social__link">
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        </li>
-      </ul>
-    </div>
-
-    <!--Footer Section-->
-    <footer class="footer-section dark-block">
-      <div class="footer__content grid grid-template-3x block-container">
-        <!--first sectoin-->
-        <div class="FCI__basic-info">
-          <img src="images/logo.png" alt="" class="footer__logo" />
-          <p class="address">
-            Gamal Abd El-Nasir, Qism Shebeen El-Kom, Shibin el Kom, Menofia
-            Governorate
-          </p>
-          <p class="phone">
-            Telephone: <a href="tel:+20 0482222170">(+20) 048 2222170</a>
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13741.695653864002!2d31.0130822!3d30.5655764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc353387ed2f37809!2sMenoufiya%20University!5e0!3m2!1sen!2seg!4v1612758990569!5m2!1sen!2seg"
-            width="300"
-            height="200"
-            frameborder="0"
-            class="footer__Map"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-        <!--second sectoin-->
-        <div class="footer__navigate">
-          <h3 class="footer__navigate__haeder">Check out other sectoins</h3>
-          <ul class="footer__navigate__list">
-            <li><a href="#">Student Activities</a></li>
-            <li><a href="#">Health care</a></li>
-            <li><a href="#">Library</a></li>
-            <li><a href="#">Online Learning</a></li>
-            <li><a href="#">Postgraduate Programs</a></li>
-          </ul>
-        </div>
-        <!--3ed section-->
-        <div class="Heritage">
-          <h3 class="Heritage__heading">FCIM's Heritage</h3>
-          <p class="Heritage__illustratoin">
-            The Faculty of computers and inforamtoins was&nbsp;founded in August
-            2000, and has a big histor
-          </p>
-          <a href="#" class="btn btn--transparent footer__history__btn"
-            >OUR HISTORY</a
+          </a>
+          <!--3ed card-->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="300"
           >
-        </div>
-      </div>
-      <div class="footer__made__info">
-        <p>
-          Copyright &copy; 2021 &nbsp;|<a
-            href="https://www.linkedin.com/in/mohamed-s-shelf-b2717b1a3/"
-            >Mohamed Said Shelf</a
+            <div class="upcomming-event-card">
+              <div class="upcomming-event__img">
+                <img src="images/Up-comming-3.jpg" alt="" />
+                <div class="mini-calender">
+                  <div class="mini-calender__month bg--dark-red txt--white">
+                    FEB
+                  </div>
+                  <div class="mini-calender__day bg--white txt--dark-blue">
+                    2
+                  </div>
+                </div>
+                <div class="upcomming-event__sort txt--dark-blue">Talks</div>
+              </div>
+              <div class="upcomming-event__description">
+                <h3 class="upcomming-event__description__header txt--dark-blue">
+                  How Books changing the world
+                </h3>
+                <p class="upcomming-event__description__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, adipisci fuga nam nulla laboriosam rerum officiis amet
+                  laudantium totam odio quisquam quia vitae odit corrupti, iste
+                  voluptatibus iusto reiciendis quas.
+                </p>
+              </div>
+            </div>
+          </a>
+          <!--4th card-->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="400"
           >
-        </p>
-      </div>
-    </footer>
+            <div class="upcomming-event-card">
+              <div class="upcomming-event__img">
+                <img src="images/Up-comming-4.jpg" alt="" />
+                <div class="mini-calender">
+                  <div class="mini-calender__month bg--dark-red txt--white">
+                    Marc
+                  </div>
+                  <div class="mini-calender__day bg--white txt--dark-blue">
+                    15
+                  </div>
+                </div>
+                <div class="upcomming-event__sort txt--dark-blue">Lecture</div>
+              </div>
+              <div class="upcomming-event__description">
+                <h3 class="upcomming-event__description__header txt--dark-blue">
+                  develop your coding skills
+                </h3>
+                <p class="upcomming-event__description__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, adipisci fuga nam nulla laboriosam rerum officiis amet
+                  laudantium totam odio quisquam quia vitae odit corrupti, iste
+                  voluptatibus iusto reiciendis quas.
+                </p>
+              </div>
+            </div>
+          </a>
+          <!--5th card-->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="500"
+          >
+            <div class="upcomming-event-card upcomming-event-card--no-img">
+              <div class="upcomming-event__img">
+                <div class="mini-calender">
+                  <div class="mini-calender__month bg--dark-red txt--white">
+                    Marc
+                  </div>
+                  <div class="mini-calender__day bg--white txt--dark-blue">
+                    2
+                  </div>
+                </div>
+                <div class="upcomming-event__sort txt--dark-blue">Audio</div>
+              </div>
+              <div class="upcomming-event__description">
+                <h3 class="upcomming-event__description__header txt--dark-blue">
+                  How better listing can affect your life
+                </h3>
+                <p class="upcomming-event__description__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, adipisci fuga nam nulla laboriosam rerum officiis amet
+                  laudantium totam odio quisquam quia vitae odit corrupti, iste
+                  voluptatibus iusto reiciendis quas.
+                </p>
+              </div>
+            </div>
+          </a>
+          <!--6th card-->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="600"
+          >
+            <div class="upcomming-event-card">
+              <div class="upcomming-event__img">
+                <img src="images/Up-comming-6.jpg" alt="" />
+                <div class="mini-calender light--shdow">
+                  <div class="mini-calender__month bg--dark-red txt--white">
+                    May
+                  </div>
+                  <div class="mini-calender__day bg--white txt--dark-blue">
+                    8
+                  </div>
+                </div>
+                <div class="upcomming-event__sort txt--dark-blue">Lecture</div>
+              </div>
+              <div class="upcomming-event__description">
+                <h3 class="upcomming-event__description__header txt--dark-blue">
+                  Pro remote working Advice
+                </h3>
+                <p class="upcomming-event__description__content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Omnis, adipisci fuga nam nulla laboriosam rerum officiis amet
+                  laudantium totam odio quisquam quia vitae odit corrupti, iste
+                  voluptatibus iusto reiciendis quas.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
 
+      <!--Expanded FAQ Question-->
+      <section class="FAQ grid grid-template-2x block-container">
+        <div
+          class="FAQ__img"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          <img src="images/bg-03.png" alt="" />
+        </div>
+        <div class="FAQ__content">
+          <h2>FAQ</h2>
+          <p class="FAQ__content__descrtion">
+            These are the most frequantly asked question students ask
+          </p>
+          <button
+            class="accordion"
+            data-aos="fade-up-left"
+            data-aos-duration="700"
+            data-aos-delay="100"
+          >
+            How to Lorem ipsum, dolor sit
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <button
+            class="accordion"
+            data-aos="fade-up-left"
+            data-aos-duration="700"
+            data-aos-delay="200"
+          >
+            What is Lorem ipsum, dolor sit
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <button
+            class="accordion"
+            data-aos="fade-up-left"
+            data-aos-duration="700"
+            data-aos-delay="300"
+          >
+            What about Lorem ipsum, dolor sit
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <button
+            class="accordion"
+            data-aos="fade-up-left"
+            data-aos-duration="700"
+            data-aos-delay="400"
+          >
+            Why Lorem ipsum, dolor sit
+          </button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Form Section-->
+      <section class="contact grid grid-template-2x block-container">
+        <div class="contact__img">
+          <img
+            src="images/setting man.png"
+            alt="Setting man"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          />
+          <button
+            type="submit"
+            form="contact-form"
+            value="Submit"
+            class="btn btn--primary-outline"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="contact__description">
+          <div class="description__heading">
+            <h2 class="description__header">Drop us a line</h2>
+            <p class="description__paragraph">
+              We would be so happy to know your opinion about FCI-Menoufia and
+              consider you messages
+            </p>
+          </div>
+          <form action="" class="contact__form" id="contact-form">
+            <div class="form__info">
+              <div class="flex-group">
+                <!-- First Name-->
+                <div
+                  class="form-group"
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-delay="100"
+                >
+                  <h3 class="lable">First Name *</h3>
+                  <input
+                    type="text"
+                    name="user first name"
+                    placeholder="i.e Mohamed"
+                    class="text-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <!--last name -->
+                <div
+                  class="form-group"
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-delay="200"
+                >
+                  <h3 class="lable">Last Name *</h3>
+                  <input
+                    type="text"
+                    name="user last name"
+                    placeholder="i.e Shelf"
+                    class="text-input"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="flex-group">
+                <!--email-->
+                <div
+                  class="form-group"
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-delay="300"
+                >
+                  <h3 class="lable">E-mail Address *</h3>
+                  <input
+                    type="email"
+                    name="user email"
+                    placeholder="i.e mo..@gmail.com"
+                    class="text-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <!--phone-->
+                <div
+                  class="form-group"
+                  data-aos="fade-up-right"
+                  data-aos-duration="500"
+                  data-aos-delay="400"
+                >
+                  <h3 class="lable">Phone Number</h3>
+                  <input
+                    type="number"
+                    name="user name"
+                    placeholder="i.e +20 01096787085"
+                    class="text-input"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="form-group"
+              data-aos="fade-up-right"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <h3 class="lable">Your Messages *</h3>
+              <textarea
+                cols="35"
+                rows="8"
+                name="User Message"
+                placeholder="Start here .."
+                class="text-input user-message"
+                autocomplete="off"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Social Media Links-->
+      <div class="social-media-wrapper">
+        <ul class="social-media-links">
+          <li
+            class="social__link"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-delay="100"
+          >
+            <a href="#" class="faceBook"><i class="fa fa-facebook-f"></i></a>
+          </li>
+          <li
+            class="social__link"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li
+            class="social__link"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
+            <a href="#" class="YoutYoube"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li
+            class="social__link"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-delay="400"
+          >
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li
+            class="social__link"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-delay="500"
+          >
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Footer Section-->
+      <footer class="footer-section dark-block">
+        <div
+          class="footer__content grid grid-template-3x block-container"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+          data-aos-delay="100"
+        >
+          <!--first sectoin-->
+          <div class="FCI__basic-info">
+            <img src="images/logo.png" alt="" class="footer__logo" />
+            <p class="address">
+              Gamal Abd El-Nasir, Qism Shebeen El-Kom, Shibin el Kom, Menofia
+              Governorate
+            </p>
+            <p class="phone">
+              Telephone: <a href="tel:+20 0482222170">(+20) 048 2222170</a>
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13741.695653864002!2d31.0130822!3d30.5655764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc353387ed2f37809!2sMenoufiya%20University!5e0!3m2!1sen!2seg!4v1612758990569!5m2!1sen!2seg"
+              width="300"
+              height="200"
+              frameborder="0"
+              class="footer__Map"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <!--second sectoin-->
+          <div class="footer__navigate">
+            <h3 class="footer__navigate__haeder">Check out other sectoins</h3>
+            <ul class="footer__navigate__list">
+              <li><a href="#">Student Activities</a></li>
+              <li><a href="#">Health care</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Online Learning</a></li>
+              <li><a href="#">Postgraduate Programs</a></li>
+            </ul>
+          </div>
+          <!--3ed section-->
+          <div class="Heritage">
+            <h3 class="Heritage__heading">FCIM's Heritage</h3>
+            <p class="Heritage__illustratoin">
+              The Faculty of computers and inforamtoins was&nbsp;founded in
+              August 2000, and has a big histor
+            </p>
+            <a href="#" class="btn btn--transparent footer__history__btn"
+              >OUR HISTORY</a
+            >
+          </div>
+        </div>
+        <div class="footer__made__info">
+          <p>
+            Copyright &copy; 2021 &nbsp;|<a
+              href="https://www.linkedin.com/in/mohamed-s-shelf-b2717b1a3/"
+              >Mohamed Said Shelf</a
+            >
+          </p>
+        </div>
+      </footer>
+    </main>
     <!--Script sectoin-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
+
       var acc = document.getElementsByClassName("accordion");
       var i;
 
@@ -862,16 +1190,38 @@
       }
       /*for off canvas menue*/
       function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "max-content";
+        document.getElementById("s-m-icons").style.visibility = "visible";
+        document.getElementById("s-m-icons").style.webkitFilter = "blur(0px)";
         document.getElementById("main").style.webkitFilter = "blur(2px)";
         /*document.getElementById("main").style.marginLeft = "250px";*/
       }
 
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("s-m-icons").style.visibility = "hidden";
         document.getElementById("main").style.webkitFilter = "blur(0px)";
         /*document.getElementById("main").style.marginLeft = "0";*/
       }
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
     </script>
   </body>
 </html>
