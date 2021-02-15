@@ -32,6 +32,8 @@ body {
 }
 html,
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
   transition: initial;
 }
 .abcclass {
@@ -53,7 +55,7 @@ h1 {
   font-size: 2.3rem;
 }
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -314,7 +316,6 @@ img {
   padding: 0 2rem;
 }
 .search__heading {
-  font-size: 3rem;
   text-align: center;
   margin: 0.5rem;
 }
@@ -736,9 +737,6 @@ img {
   margin-bottom: 3rem;
 }
 
-.description__heading .description__header {
-  font-size: 3rem;
-}
 .unique-features__img > img {
   width: 70%;
   margin: auto;
@@ -842,6 +840,9 @@ input[type="number"] {
 
 .social-media-links .social__link {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-media-links .social__link a {
