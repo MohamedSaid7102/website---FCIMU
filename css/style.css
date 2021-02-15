@@ -485,7 +485,8 @@ img {
 }
 
 .advertisment-testemonial .advertisment__heading {
-  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .advertisment-testemonial {
@@ -505,6 +506,7 @@ img {
 .banner__heading {
   line-height: 1.2;
   text-align: center;
+  text-transform: capitalize;
 }
 .banner-grid .headding__info {
   align-self: center;
