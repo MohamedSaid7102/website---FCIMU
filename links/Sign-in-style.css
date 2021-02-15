@@ -78,8 +78,9 @@ a {
   border-radius: 15px;
 }
 .login-html {
+  border-radius: 15px;
   width: 100%;
-  height: max-content;
+  height: 100%;
   position: absolute;
   padding: 90px 70px 50px 70px;
   background: rgba(40, 57, 101, 0.9);
@@ -351,7 +352,7 @@ a {
 }
 @media only screen and (max-width: 500px) {
   .googel-btn-text {
-    font-size: 95%;
+    font-size: 85%;
   }
 }
 
