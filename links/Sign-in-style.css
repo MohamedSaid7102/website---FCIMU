@@ -257,7 +257,7 @@ a {
   padding: 0 0.8rem;
   max-width: 400px;
 }
-@media only screen and (min-width: 834px) {
+@media only screen and (min-device-width: 834px) {
   .sign-in-image {
     order: 2;
   }
@@ -336,7 +336,7 @@ a {
   letter-spacing: 2.5px;
 }
 
-@media only screen and (max-width: 880px) and (min-width: 834px) {
+@media only screen and (max-width: 880px) and (min-device-width: 834px) {
   .googel-btn-text {
     font-size: 70%;
   }
@@ -365,7 +365,7 @@ a {
   align-items: center;
   margin-top: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
   .footer__copyright {
     flex-direction: row;
   }
