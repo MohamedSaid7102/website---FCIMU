@@ -78,7 +78,7 @@ a {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 3.8rem;
   }
@@ -95,7 +95,7 @@ a {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-device-width: 992px) {
+@media only screen and (min-width: 992px) {
   h1 {
     font-size: 5rem;
   }
@@ -158,17 +158,17 @@ img {
   column-gap: 2rem;
 }
 /* Small Devices, Tablets */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .grid-template-2x {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (min-device-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .grid-template-3x {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .grid-template-2x-3x {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -176,13 +176,13 @@ img {
     align-items: center;
   }
 }
-@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .grid-template-2x-3x {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .grid-template-2x-3x {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -391,7 +391,7 @@ img {
   right: 7.5px;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .return-to-top {
     visibility: visible;
   }
@@ -488,7 +488,7 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .advertisment-testemonial {
     margin: 0;
   }
@@ -522,7 +522,7 @@ img {
   height: 100vh;
 }
 
-@media only screen and (min-device-width: 856px) {
+@media only screen and (min-width: 856px) {
   .grid-template-2x.banner-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -531,7 +531,7 @@ img {
   }
 }
 
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .separator {
     display: none;
   }
@@ -598,7 +598,7 @@ img {
   justify-content: center;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .services-section {
     flex-flow: row nowrap;
   }
@@ -628,7 +628,7 @@ img {
   padding: 2rem;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .card--left-style.service__card {
     text-align: left;
   }
@@ -710,7 +710,7 @@ img {
   opacity: 0.8;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .card {
     margin: 0;
   }
@@ -750,7 +750,7 @@ img {
   align-self: center;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .description__heading {
     text-align: left;
   }
@@ -769,7 +769,7 @@ img {
   flex-wrap: wrap;
 }
 
-@media only screen and (min-device-width: 500px) {
+@media only screen and (min-width: 500px) {
   .flex-group {
     flex-wrap: nowrap;
   }
@@ -966,7 +966,7 @@ input[type="number"] {
   padding-bottom: 1rem;
   display: table;
 }
-@media only screen and (min-device-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .footer-section {
     height: max-content;
     padding-top: 3rem;
@@ -1014,7 +1014,7 @@ input[type="number"] {
   overflow: hidden;
   transform: scale(0.85);
 }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .mini-calender {
     max-width: 70px;
   }
@@ -1134,7 +1134,7 @@ input[type="number"] {
   color: #586c93;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .upcomming-event__sort {
     width: 290px;
   }
@@ -1175,13 +1175,13 @@ input[type="number"] {
   max-width: 40ch;
 }
 
-@media only screen and (min-device-width: 468px) {
+@media only screen and (min-width: 468px) {
   .accordion {
     max-width: 50ch;
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accordion {
     text-align: left;
   }
@@ -1360,7 +1360,7 @@ input[type="number"] {
   margin: auto;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Nav__sectoin dt {
     font-size: 1.2rem;
   }
@@ -1374,7 +1374,7 @@ input[type="number"] {
   max-width: 70px;
   z-index: 20000;
 }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header img {
     max-width: 110px;
   }
@@ -1382,7 +1382,7 @@ input[type="number"] {
     font-size: 35px;
   }
 }
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .header img {
     max-width: 150px;
   }
@@ -1411,7 +1411,7 @@ input[type="number"] {
   border-bottom-right-radius: 10px;
   overflow: hidden;
 }
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .icon-bar {
     display: none;
   }
