@@ -843,8 +843,11 @@ input[type="number"] {
 .social-media-links .social__link {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+}
+.social-media-links .social__link a i {
+  font-size: 20px;
 }
 
 .social-media-links .social__link a {
