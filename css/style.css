@@ -846,7 +846,7 @@ input[type="number"] {
   justify-items: center;
   align-items: center;
 }
-.social-media-links .social__link a i {
+.social-media-links .social__link .fa {
   font-size: 20px;
 }
 
