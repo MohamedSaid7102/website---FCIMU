@@ -847,7 +847,9 @@ input[type="number"] {
   align-items: center;
 }
 .social-media-links .social__link .fa {
-  font-size: 20px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .social-media-links .social__link a {
