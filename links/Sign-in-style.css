@@ -66,7 +66,7 @@ a {
 
 .login-wrap {
   width: 100%;
-  margin: 1rem;
+  margin: 2rem 0.5rem;
   max-width: 525px;
   position: relative;
   background: url("../images/collage.jpg") no-repeat center;
@@ -323,7 +323,7 @@ a {
   overflow: hidden;
   background-color: #fff;
   padding: 6px;
-  margin: 0.7rem;
+  margin: 0 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +349,7 @@ a {
 @media only screen and (max-width: 500px) {
   .googel-btn-text {
     font-size: 65%;
+    margin: 13px;
   }
 }
 

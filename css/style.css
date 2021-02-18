@@ -450,6 +450,12 @@ img {
   transition: all 0.4s ease, transform 0.4s ease;
 }
 
+@media screen and (min-width: 768px) {
+  .advertisment-testemonial {
+    padding-bottom: 25rem;
+  }
+}
+
 .color-hover-to-top {
   background-image: linear-gradient(to top, #cdcdcd66 50%, #fff 0);
   background-position: top;
@@ -880,6 +886,12 @@ input[type="number"] {
   font-size: 24px;
   color: #262626;
   transition: all 200ms ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .social-media-links .social__link .fa {
+    font-size: 20px;
+  }
 }
 
 .faceBook:hover .fa {
