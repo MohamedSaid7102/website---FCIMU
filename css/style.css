@@ -846,11 +846,6 @@ input[type="number"] {
   justify-items: center;
   align-items: center;
 }
-.social-media-links .social__link .fa {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
 
 .social-media-links .social__link a {
   position: relative;
@@ -876,7 +871,9 @@ input[type="number"] {
 .social-media-links .social__link .fa {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(0deg, #fff, #ddd);
   border-radius: 100%;
   line-height: calc(60px - 12px);
