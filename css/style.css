@@ -659,6 +659,7 @@ img {
   }
   .service__card__illustration {
     font-size: 1rem;
+    line-height: 1.8;
   }
 
   .service__card {
@@ -671,11 +672,16 @@ img {
 
 .card {
   box-shadow: 0 0 5px rgb(233, 233, 233);
-  height: 400px;
+  height: max-content;
   margin: 0 1rem;
   max-width: 300px;
   overflow: auto;
   transition: all 150ms ease-in-out;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    height: 27rem;
+  }
 }
 
 .card-photo {
@@ -705,6 +711,7 @@ img {
 }
 .card__content .card__illustration {
   font-size: 1rem;
+  line-height: 1.8;
 }
 .card__content .link-wrapper {
   margin: auto;
@@ -1047,6 +1054,15 @@ input[type="number"] {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .mini-calender__month {
+    font-size: 0.7rem;
+  }
+  .mini-calender__day {
+    font-size: 1.5rem;
+  }
+}
+
 .mini-calender__month {
   height: 30%;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -1076,6 +1092,12 @@ input[type="number"] {
   max-width: 450px;
   height: 600px;
   overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .upcomming-event-card {
+    height: 33rem;
+  }
 }
 
 .upcomming-event-card--no-img .upcomming-event__img .mini-calender {
@@ -1146,6 +1168,7 @@ input[type="number"] {
 }
 .upcomming-event__description__content {
   font-size: 1rem;
+  line-height: 2.1;
   color: #586c93;
 }
 
