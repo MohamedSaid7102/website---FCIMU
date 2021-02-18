@@ -440,6 +440,7 @@ img {
 .advertisment-testemonial {
   overflow: auto;
   padding: 2rem 1rem;
+  padding-bottom: 25rem;
   max-width: 370px;
   height: 400px;
   box-shadow: 0 0 5px lightgray;
@@ -450,9 +451,9 @@ img {
   transition: all 0.4s ease, transform 0.4s ease;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .advertisment-testemonial {
-    padding-bottom: 25rem;
+    padding-bottom: 27rem;
   }
 }
 
