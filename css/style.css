@@ -668,6 +668,10 @@ img {
   }
 }
 
+::selection {
+  background-color: #daf4fb;
+  color: #222;
+}
 /**cards sectoin */
 
 .card {
