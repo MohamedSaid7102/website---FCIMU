@@ -76,6 +76,10 @@ a {
   color: lightgray;
   font-size: 1.3rem;
 }
+::selection {
+  background-color: #daf4fb;
+  color: #222;
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -438,9 +442,8 @@ img {
 }
 
 .advertisment-testemonial {
-  overflow: auto;
-  padding: 2rem 1rem;
-  padding-bottom: 25rem;
+  overflow: hidden;
+  padding: 2rem 1rem 0;
   max-width: 370px;
   height: 400px;
   box-shadow: 0 0 5px lightgray;
@@ -668,10 +671,6 @@ img {
   }
 }
 
-::selection {
-  background-color: #daf4fb;
-  color: #222;
-}
 /**cards sectoin */
 
 .card {
@@ -988,6 +987,8 @@ input[type="number"] {
   margin: 4rem auto;
 }
 .footer__made__info {
+  text-align: center;
+  line-height: 1.5;
   margin: 0 auto;
   padding-bottom: 1rem;
   display: table;
