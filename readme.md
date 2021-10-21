@@ -30,20 +30,14 @@
 6. faq section
 ![Home Page img](/images/Readme/faq.jpg "faq section")
 
-7. Features section
-![Home Page img](/images/Features/faq.jpg "Features section")
-
-8. footer section
-![Home Page img](/images/Readme/footer.jpg "footer section")
-
-9. HomePage. faq section
-![Home Page img](/images/Readme/HomePage.jpg "HomePage section")
-
-10. services. faq section
+7. services section
 ![Home Page img](/images/Readme/services.jpg "services section")
 
-11. whatmakesusstandsout. faq section
+9. What makes us stands out section
 ![Home Page img](/images/Readme/whatmakesusstandsout.jpg "whatmakesusstandsout section")
+
+9. footer section
+![Home Page img](/images/Readme/footer.jpg "footer section")
 
 ## Preview Link [here](https://mohamedsaid7102.github.io/FCI-Menofia_University/) to go to FCIM 🚀
 
